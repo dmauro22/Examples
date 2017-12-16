@@ -7,8 +7,8 @@
 //
 //*******************************************************
 
-#include <iostream>			// for cin, cout, endl
-#include <iomanip>          // to format the data 
+#include <iostream>		// for cin, cout, endl
+#include <iomanip>          	// to format the data 
 #include <cstdlib>
 #include <cmath>
 
