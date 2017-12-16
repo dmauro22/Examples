@@ -2,37 +2,35 @@
 // Decimal to Binary conversion:
 //
 // This program prompts user to input an integer, then
-// calculates and returns the binary form of the integer
+// calculates and returns the binary form of the integer.
 // 
-//
 //*******************************************************
 
-#include <iostream>		// for cin, cout, endl
-#include <iomanip>          	// to format the data 
+#include <iostream>	
+#include <iomanip>          	 
 #include <cstdlib>
 #include <cmath>
 
 using namespace std;
 
+// Prototypes
 int spacesNeeded(int);
 void binaryCalc(int[], int, int);
 
 int main()
 {
 	int theNumber;			// input number
-	int *theBinary = NULL;	// binary equivalent
-	int places;				// number of array slots needed
+	int *theBinary = NULL;		// binary equivalent
+	int places;			// number of array slots needed
 	char cont = 'y';		// Continue flag
-	bool negFlag;			// Flag for negative number
 
 	while (cont == 'y' || cont == 'Y')
 	{
 		theNumber = 0;
 		places = 0;
-		cout << "Enter a positive integer: ";
+		cout << "Enter a non-negative integer: ";
 		cin >> theNumber;
-
-
+		
 		places = spacesNeeded(theNumber);
 
 		theBinary = new int[places];
@@ -65,7 +63,6 @@ int main()
 int spacesNeeded(int mainNum)
 {
 	int slots = 0;
-	//int incrementer = 0;
 	while ((mainNum - pow(2, slots) + 1) > 0)
 	{
 		slots++;
@@ -73,7 +70,7 @@ int spacesNeeded(int mainNum)
 	return slots;
 }
 
-// Function to converts the decimal number to binary
+// Function to convert the decimal number to binary
 void binaryCalc(int theBinary[], int places, int theNumber)
 {
 	for (int i = 0; i < places; i++)
