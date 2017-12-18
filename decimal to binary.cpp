@@ -6,6 +6,7 @@
 // 
 //*******************************************************
 
+
 #include <iostream>	
 #include <iomanip>          	 
 #include <cstdlib>
@@ -19,9 +20,9 @@ void binaryCalc(int[], int, int);
 
 int main()
 {
-	int theNumber;			// input number
-	int *theBinary = NULL;		// binary equivalent
-	int places;			// number of array slots needed
+	int theNumber;			// input: number
+	int *theBinary = NULL;		// output: binary equivalent
+	int places;			// number of array slots needed to hold binary number
 	char cont = 'y';		// Continue flag
 
 	while (cont == 'y' || cont == 'Y')
@@ -52,6 +53,7 @@ int main()
 		cout << endl;
 	}
 
+	// Release memory
 	delete[] theBinary;
 	theBinary = nullptr;
 
