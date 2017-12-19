@@ -1,3 +1,5 @@
+# Python 3.5 
+#
 # This program is a guessing game.  It uses a random number generator, and 
 # gives hints when the player is close.  The range is 1 to 1000, and the clue
 # is given when the player is within 10 points of the chosen number.
@@ -19,15 +21,16 @@ def hint(target_number, target_guess):
 	elif target_guess - target_number > 10:
 		print('high')
 
+# Set messages for end of game
+m1 = "It took you "
+m2 = " guesses"
+m3 = " guess... incredible!"
+
 # Create loop control
 
 again = "y"
 
 guess_count = 1
-
-m1 = "It took you "
-m2 = " guesses"
-m3 = " guess.. incredible!"
 
 # Define the game
 
