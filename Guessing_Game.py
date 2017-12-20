@@ -4,7 +4,6 @@
 # gives hints when the player is close.  The range is 1 to 1000, and the clue
 # is given when the player is within 10 points of the chosen number.
 
-
 # Import the random module
 
 import random
@@ -21,20 +20,15 @@ def hint(target_number, target_guess):
 	elif target_guess - target_number > 10:
 		print('high')
 
-# Set messages for end of game
-m1 = "It took you "
-m2 = " guesses"
-m3 = " guess... incredible!"
-
 # Create loop control
 
-again = "y"
+again = 'y'
 
 guess_count = 1
 
 # Define the game
 
-while again == "y" or again == "Y":
+while again == 'y' or again == 'Y':
 
 	target_number = random.randint(1, 1000)
 	print(target_number)
@@ -45,8 +39,11 @@ while again == "y" or again == "Y":
 		hint(target_number, target_guess)
 		target_guess = int(input('Guess again: '))
 
+
 	print('We have a winner!!!')
-	if guess_count == 1:
-		print m1, guess_count, m3
-	else:
-		print m1, guess_count, m2
+	print('It took you ', guess_count,  ' tries')
+	print('Would you like to play again? ')
+	again = input('Y for yes: ')
+	guess_count = 1
+	target_guess = 0
+
