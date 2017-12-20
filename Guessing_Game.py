@@ -31,7 +31,6 @@ guess_count = 1
 while again == 'y' or again == 'Y':
 
 	target_number = random.randint(1, 1000)
-	print(target_number)
 	target_guess = int(input('Guess any number from 1 to 1000: '))
 
 	while target_guess != target_number:
