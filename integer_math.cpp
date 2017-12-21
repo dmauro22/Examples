@@ -1,8 +1,5 @@
 //******************************************************************
-// COSC 1337: Lab 1
-// Programmer: Daniel Mauro
-// Completed : Sept 19, 2017
-// Status    : Complete
+// Simple integer math to display function modularity
 //
 // This program will be used to start my project
 //******************************************************************
@@ -14,32 +11,20 @@ using namespace std;
 // Declare function prototypes
 
 int sumnum(int, int);
-
 int prodnum(int, int);
-
 int avgnum(int, int);
-
 int divnum(int, int);
-
 int modnum(int, int);
 
-int main()	
-					
+int main()					
 { 
 // Declare variables
-
 	int num1 = 0;
-	
 	int num2 = 0;
-	
 	int sums = 0;
-
 	int prod = 0;
-	
 	int avg = 0;
-	
 	int div = 0;
-	
 	int mod = 0;
 	
 // Get values for first two integers
@@ -118,21 +103,15 @@ int prodnum(int num1, int num2)
 int avgnum(int num1, int num2)
 
 {
-	
 	int avg = (num1 + num2) / 2;
-	
 	return avg;
-
 }
 
 int divnum(int num1, int num2)
 
 {
-	
 	int div = num1 / num2;
-	
 	return div;
-
 }
 
 int modnum(int num1, int num2)
