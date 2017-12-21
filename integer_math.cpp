@@ -30,11 +30,9 @@ int main()
 // Get values for first two integers
 
 	cout << "Enter any integer: ";
-	
 	cin >> num1;
 
 	cout << "Enter another integer: ";
-	
 	cin >> num2;
 
 // Calculate sum of integers
@@ -79,29 +77,20 @@ int main()
 }
 
 int sumnum(int num1, int num2)
-
 {
-	
 	int sums = num1 + num2;
-	
 	return sums;
-
 }
 
 
 int prodnum(int num1, int num2)
-
 {
-	
 	int prod = num1 * num2;
-	
 	return prod;
-
 }
 
 
 int avgnum(int num1, int num2)
-
 {
 	int avg = (num1 + num2) / 2;
 	return avg;
@@ -115,12 +104,8 @@ int divnum(int num1, int num2)
 }
 
 int modnum(int num1, int num2)
-
 {
-	
 	int mod = num1 % num2;
-	
 	return mod;
-
 }
 
