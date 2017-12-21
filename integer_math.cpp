@@ -27,8 +27,7 @@ int main()
 	int div = 0;
 	int mod = 0;
 	
-// Get values for first two integers
-
+// Get values for two integers
 	cout << "Enter any integer: ";
 	cin >> num1;
 
@@ -36,23 +35,18 @@ int main()
 	cin >> num2;
 
 // Calculate sum of integers
-
 	sums = sumnum(num1, num2);
 
 // Calculate product of integers
-	
 	prod = prodnum(num1, num2);
 	
 // Calculate average of integers
-
 	avg = avgnum(num1, num2);
 	
 // Calculate integer 1 divided by integer 2
-
 	div = divnum(num1, num2);
 	
 // Calculate remainder of integer 1 divided by integer 2
-
 	mod = modnum(num1, num2);
 	
 // Print results of calculations
@@ -72,8 +66,6 @@ int main()
 	cout << "The modulus = " << mod << endl;
 	
 	return 0;
-	
-
 }
 
 int sumnum(int num1, int num2)
