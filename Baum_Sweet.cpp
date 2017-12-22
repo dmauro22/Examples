@@ -1,4 +1,4 @@
-//******************************************************************
+///******************************************************************
 // Baum Sweet Sequence
 //
 // Prompts user to enter a positive integer and calculates 
@@ -14,57 +14,47 @@ using namespace std;
 
 int main()
 {
-	string baum = "1101";
-	int start;
-	int baseNum;
-	int j = 0;
-	int i;
-	int k;
+	// Variable declarations
+
+	string baum = "1101";		// First 4 elements of Baum-Sweet sequence
+	int baseNum;			// number to calculate up to
+	int i = 2;				// array element marker
 
 	cout << "Enter base nummber: ";
 	cin >> baseNum;
 
-	while (baseNum > pow(2, j))
-		j++;
-	
-	i = 2;
-	
-	while (baum.length() < pow(2,j))
+	// Calculate Baum-Sweet sequence
+	while (i < baseNum)
 	{
-		while (i < pow(2, j))
-		{
-			if (baum[i] == '0')
-				if (baum[i + 1] == '0')
-				{
-					baum.append("0000");
-					cout << "0 0" << endl;
-				}
-				else
-				{
-					baum.append("1001");
-					cout << "0 1" << endl;
-				}
+		if (baum[i] == '0')
+			if (baum[i + 1] == '0')
+			{
+				baum.append("0000");
+			}
 			else
-				if (baum[i + 1] == '0')
-				{
-					baum.append("0100");
-					cout << "1 0" << endl;
-				}
-				else
-				{
-					baum.append("1101");
-					cout << "1 1" << endl;
-				}
-			i += 2;
-		}
+			{
+				baum.append("1001");
+			}
+		else
+			if (baum[i + 1] == '0')
+			{
+				baum.append("0100");
+			}
+			else
+			{
+				baum.append("1101");
+			}
+		i += 2;
 	}
-	for (k = 0; k < baseNum; k++)
-		cout << baum[k] << ",";
-	k++;
-	cout << baum[k];
+
+	// Output results
+	for (int k = 0; k <= baseNum; k++)
+		cout << baum[k] << " ";
+	
 	cout << endl;
 
 	system("pause");
 
 	return 0;
 }
+
