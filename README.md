@@ -1,5 +1,4 @@
 # Examples
 Examples of code
 
-All code is in C++ or Python.  Some are programs written for
-school assignments.  Others are ideas that I wanted to put out.
+All code is in C++ or Python.  Its a collection of various projects motivated by school, puzzles, or other things I wanted to come up with on my own.
