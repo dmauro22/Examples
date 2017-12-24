@@ -12,8 +12,8 @@
 // of state or out of country.
 //******************************************************************
 
-#include <iostream>				// for cin, cout, endl
-#include <iomanip>              // to format the data 
+#include <iostream>			
+#include <iomanip>          
 #include <string>
 #include <cstdlib>
 #include <cmath>
