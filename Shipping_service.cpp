@@ -3,8 +3,13 @@
 // Programmer: Daniel Mauro
 // Completed : November 23, 2017
 // 
-//
 // Shipping Service simulator
+// Package weight must be greater than zero and less than or equal
+// to 50.  No single side can be longer than 6, and the girth can
+// be no biggger than 10.  Girth is calculated as the sum of the two 
+// smallest sides times 2.
+// There is an additional service charge if the ship location is out
+// of state or out of country.
 //******************************************************************
 
 #include <iostream>				// for cin, cout, endl
