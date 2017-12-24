@@ -1,14 +1,13 @@
 //******************************************************************
 // Simple integer math to display function modularity
 //
-// This program will be used to start my project
 //******************************************************************
 
-#include <iostream>				// for cin, cout, endl
+#include <iostream>	
 
 using namespace std;
 
-// Declare function prototypes
+// Function prototypes
 
 int sumnum(int, int);
 int prodnum(int, int);
