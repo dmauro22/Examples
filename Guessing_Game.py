@@ -4,7 +4,6 @@
 # gives hints when the player is close.  The range is 1 to 1000, and the clue
 # is given when the player is within 10 points of the chosen number.
 
-# Import the random module
 
 import random
 
