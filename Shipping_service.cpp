@@ -8,6 +8,7 @@
 // to 50.  No single side can be longer than 6, and the girth can
 // be no biggger than 10.  Girth is calculated as the sum of the two 
 // smallest sides times 2.
+//
 // There is an additional service charge if the ship location is out
 // of state or out of country.
 //******************************************************************
@@ -55,7 +56,7 @@ int main()
 	{
 		cout << "Welcome to Dan El Hombre Shipping Company" << endl;
 		cout << "Enter delivery location" << endl;
-		cout << "(T)exas, (O)ut of state, or (F)oreign: ";
+		cout << "(T)exas, (O)ut of state, (F)oreign, or (X) to exit: ";
 		cin >> location;
 
 		if (location != 'x' && location != 'X')
