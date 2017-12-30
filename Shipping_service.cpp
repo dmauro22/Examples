@@ -11,6 +11,10 @@
 //
 // There is an additional service charge if the ship location is out
 // of state or out of country.
+//
+// The program calculates each individual transaction total and then
+// summarizes the total of all transactions.
+//
 //******************************************************************
 
 #include <iostream>			
