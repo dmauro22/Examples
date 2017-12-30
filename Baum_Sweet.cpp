@@ -3,6 +3,8 @@
 //
 // Prompts user to enter a positive integer and calculates 
 // the Baum-Sweet sequence from 0 to that number
+//
+// https://en.wikipedia.org/wiki/Baum-Sweet_sequence
 // 
 //******************************************************************
 
