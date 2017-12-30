@@ -1,8 +1,14 @@
 # Python 3.5 
 #
-# This program is a guessing game.  It uses a random number generator, and 
-# gives hints when the player is close.  The range is 1 to 1000, and the clue
-# is given when the player is within 10 points of the chosen number.
+# Guessing game  
+#
+# This program uses a random number generator and gives 
+# hints when the player is close.  The range is 1 to 1000, 
+# and the clue is given when the player is within 10 points 
+# of the chosen number.
+#
+#
+#
 
 
 import random
