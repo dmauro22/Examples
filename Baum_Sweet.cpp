@@ -23,7 +23,13 @@ int main()
 
 	cout << "Enter base nummber: ";
 	cin >> baseNum;
-
+	
+	while (baseNum < 0)
+	{
+		cout << "Invalid, must be positive: ";
+		cin >> baseNum;
+	}
+	
 	// Calculate Baum-Sweet sequence
 	while (i < baseNum)
 	{
