@@ -32,6 +32,12 @@ int main()
 		cout << "Enter a non-negative integer: ";
 		cin >> theNumber;
 		
+		while (theNumber < 0)
+		{
+			cout << "Integer must be positive: ";
+			cin >> theNumber;
+		}
+		
 		places = spacesNeeded(theNumber);
 
 		theBinary = new int[places];
