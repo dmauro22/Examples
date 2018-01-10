@@ -13,7 +13,7 @@
 
 import random
 
-# Function with hint calculator
+# Function with hint calculator, displays when the guess is within 10 of the target number
 
 def hint(target_number, target_guess):
 	if target_number - target_guess > 10:
@@ -25,7 +25,7 @@ def hint(target_number, target_guess):
 	elif target_guess - target_number > 10:
 		print('high')
 
-# Create loop control
+# Loop control
 
 again = 'y'
 
