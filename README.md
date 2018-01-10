@@ -1,4 +1,4 @@
 # Examples
 Examples of code
 
-All code is in C++ or Python.  Its a collection of various projects motivated by school, puzzles, or other things I came up with on my own.
+Most of the code is in C++ which is what I have the most experience in.  Some is in Python, which is my second most used language.
