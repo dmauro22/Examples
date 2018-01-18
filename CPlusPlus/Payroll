@@ -6,8 +6,8 @@
 // Employee payroll management
 //******************************************************************
 
-#include <iostream>			// for cin, cout, endl
-#include <iomanip>          // to format the data 
+#include <iostream>			
+#include <iomanip>         
 #include <string>
 #include <cstdlib>
 #include <cmath>
@@ -18,7 +18,7 @@ using namespace std;
 
 struct Employee
 {
-	int empID;			// positive integer
+	int empID;		// positive integer
 	string empName;		// string up to 20 characters
 	float hourlyRate;	// non-negative float
 	int empType;		// must be 0 (for union) or 1 (for management)
