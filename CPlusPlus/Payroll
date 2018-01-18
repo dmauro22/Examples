@@ -1,0 +1,139 @@
+//******************************************************************
+// Programmer: Daniel Mauro
+//
+// Completed : November 23, 2017
+//
+// Employee payroll management
+//******************************************************************
+
+#include <iostream>			// for cin, cout, endl
+#include <iomanip>          // to format the data 
+#include <string>
+#include <cstdlib>
+#include <cmath>
+
+using namespace std;
+
+// struct declaration 
+
+struct Employee
+{
+	int empID;			// positive integer
+	string empName;		// string up to 20 characters
+	float hourlyRate;	// non-negative float
+	int empType;		// must be 0 (for union) or 1 (for management)
+};
+
+
+int main()
+{
+	Employee emp[4];
+	float hours[4];
+	float grossPay[4];
+	float netPay[4];
+	float tax[4];
+	float totalGrossPay = 0;
+	float totalNetPay = 0;
+
+	// Loop to fill struct array
+
+	for (int i = 0; i < 4; i++)
+	{
+		cout << "Enter information for employee " << i + 1 << endl;
+		cout << "Employee ID: ";
+		cin >> emp[i].empID;
+
+		//Test employee ID to ensure is non-negative
+
+		while (emp[i].empID <= 0)
+		{
+			cout << "Invalid employee ID.  Must be a positive number. " << endl;
+			cout << "Employee ID: ";
+			cin >> emp[i].empID;
+		}
+
+		cout << "Employee Name: ";
+		cin >> emp[i].empName;
+
+		cout << "Pay rate: ";
+		cin >> emp[i].hourlyRate;
+
+		// Test pay rate to ensure is non-negative
+
+		while (emp[i].hourlyRate <= 0)
+		{
+			cout << "Invalid pay rate.  Must be a positive number. " << endl;
+			cout << "Pay rate: ";
+			cin >> emp[i].hourlyRate;
+		}
+
+		cout << "Employee type (0 for union, 1 for management): ";
+		cin >> emp[i].empType;
+		cout << endl;
+
+		// Test employee type to ensure is 0 or 1
+
+		while (emp[i].empType != 0 && emp[i].empType != 1)
+		{
+			cout << "Invalid employee type.  Must be 0 or 1. " << endl;
+			cout << "Employee type: ";
+			cin >> emp[i].empType;
+		}
+
+	}
+
+	// Enter timecard information
+
+	cout << "Enter timecard information for each employee" << endl << endl;
+	for (int i = 0; i < 4; i++)
+	{
+		cout << "Hours worked for " << emp[i].empName << ": ";
+		cin >> hours[i];
+	}
+
+	// Calculate salary for each employee
+
+	for (int i = 0; i < 4; i++)
+	{
+		if (emp[i].empType == 0)
+		{
+			if (hours[i] <= 40)
+				grossPay[i] = emp[i].hourlyRate * hours[i];
+			else
+				grossPay[i] = (emp[i].hourlyRate * 40) + (emp[i].hourlyRate * 1.5 * (hours[i] - 40));
+		}
+		else
+			grossPay[i] = emp[i].hourlyRate * hours[i];
+
+		tax[i] = grossPay[i] * .15;
+		netPay[i] = grossPay[i] - tax[i];
+
+		totalGrossPay += grossPay[i];
+		totalNetPay += netPay[i];
+	}
+
+	// Output data
+
+	cout << endl << "Employee data" << endl;
+
+	cout << setw(5) << "ID" << setw(20) << "Name" << setw(15) << "Gross Pay" << setw(10) << "Tax" << setw(10) << "Net Pay" << endl;
+	for (int i = 0; i < 4; i++)
+	{
+
+		cout << setw(5) << emp[i].empID;
+		cout << setw(20) << emp[i].empName;
+		cout << fixed << showpoint << setprecision(2) << setw(15) << grossPay[i];
+		cout << fixed << showpoint << setw(10) << tax[i];
+		cout << fixed << showpoint << setw(10) << netPay[i];
+		cout << endl;
+	}
+
+	cout << endl;
+	cout << "Total Gross Pay: $" << setprecision(2) << totalGrossPay << endl;
+	cout << "Total Net Pay: $" << setprecision(2) << totalNetPay << endl;
+
+	system("pause");
+
+	return 0;
+
+} // End of program
