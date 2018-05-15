@@ -1,3 +1,6 @@
+// This program highlights .cpp and .h files for
+// fraction processing
+
 #include <iostream>
 #include <vector>
 #include <iomanip>
