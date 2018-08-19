@@ -6,7 +6,10 @@ string ltrim(const string &);
 string rtrim(const string &);
 vector<string> split(const string &);
 
-// Complete the solve function below.
+// ** The code in main() was provided.  The solve function below
+// was empty and needed to be completed to enable the function
+// to run properly.
+// **
 void solve(vector<int> low, vector<int> high, vector<int> close) 
 {
     int gapUp = 0;
