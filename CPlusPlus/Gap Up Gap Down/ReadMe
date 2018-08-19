@@ -1,0 +1,75 @@
+This was a challenge from a HackerRank code sprint (hackerrank.com) that took place August 18th and 19th, 2018.
+
+John has been analyzing stocks and their prices as his latest assignment. Being a beginner in stocks, 
+he has selected a stock HRC and collected the low, high and close prices for  days in the form of arrays:
+
+low[], where low[i] is the lowest value of the stock on i day.
+high[], where high[i] is the highest value of the stock on i day.
+close[], where close[i] is the closing value of the stock on i day.
+
+Recently, he came across the concept of Gap Up and Gap Down.
+
+The stock is considered Gap Up if on a given day it's low price is higher 
+than the previous day's close price, and the stock is considered Gap Down 
+if it's high price is lower than the previous day's close price.
+
+Starting from the 2nd day til the n day count the number of Gap Up and 
+Gap Down the stock went through during the n days.
+
+Input Format
+
+The first line contains an integer n, where n is the number of days for 
+which the stock data is given. 
+The next line contains the array 'low' represented by n space-separated integers, 
+where low[i] is the lowest value of the stock on the i day. 
+The next line contains the array high represented by n space-separated integers, 
+where high[i] is the highest value of the stock on the i day. 
+The next line contains the array close represented by n space-separated integers, 
+where close[i] is the close value of the stock on the i day.
+
+Constraints:
+2 <= n <= 10^5
+1 <= low[i],high[i], close[i] <= 10^3
+
+Output Format
+
+Print two space-separated integers representing the number of Gap Up and Gap Down 
+observed for the stock respectively.
+
+Sample Input 0
+
+5
+5 3 7 7 2
+10 9 20 15 10
+6 8 16 11 6
+Sample Output 0
+
+0 2
+Explanation 0
+
+There is no Gap Up observed.
+
+There are two Gap Downs observed:
+
+highPrice[4]  closePrice[3]
+highPrice[5]  closePrice[4]
+So we print 0 and 2 as our answer.
+
+Sample Input 1
+
+4
+2 8 6 12
+10 15 13 20
+6 12 11 16
+Sample Output 1
+
+2 0
+Explanation 1
+
+There are two Gap Ups observed:
+
+lowPrice[2]  closePrice[1]
+lowPrice[4]  closePrice[3]
+There are no Gap Downs observed.
+
+So we print 2 and 0 as our answer
