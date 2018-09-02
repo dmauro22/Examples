@@ -1,0 +1,73 @@
+class Solution
+{
+public:
+	int myAtoi(string str)
+	{
+		bool negative{ 0 };
+		bool sign{ 0 };
+		bool num{ 0 };
+		long long allYall{ 0 };
+		int count{ 0 };
+		int convert[] = {0,1,2,3,4,5,6,7,8,9};
+		
+		while (count < str.length())
+		{
+			//cout << "Analyzing: " << int(str[count]) << endl;
+			if (str[count] == ' ')
+				if (num || sign)
+					break;
+				else
+					count++;
+
+			else if (str[count] == 45)
+			{
+				if (sign == 0 && !num)
+				{
+					negative = 1;
+					count++;
+					sign = 1;
+				}
+				else
+					break;
+			}
+
+			else if (str[count] == 43)
+			{
+				if (sign == 0 && !num)
+				{
+					count++;
+					sign = 1;
+				}
+				else
+					break;
+			}
+
+
+			else if (int(str[count]) >= 48 && int(str[count]) <= 57)
+			{
+				num = 1;
+				allYall *= 10;
+				allYall += int(convert[int(str[count])-48]);
+				count++;
+
+				if (allYall > INT_MAX || allYall < INT_MIN)
+					break;
+			}
+
+			else
+			{
+				break;
+			}
+		}
+
+		if (negative)
+			allYall *= -1;
+
+		if (allYall < -2147483647)
+			return INT_MIN;
+		if (allYall >= 2147483647)
+			return INT_MAX;
+		
+		return allYall;
+	}
+};
