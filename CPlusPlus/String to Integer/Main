@@ -1,0 +1,16 @@
+int main()
+{
+	string word { "9223372036854775808" };
+	
+	Solution run; 
+
+	int answer = run.myAtoi(word);
+
+	cout << "Your original string is: " << word << endl;
+	
+	cout << "Your adjusted number is: " << answer << endl;
+
+	system("pause");
+	
+	return 0;
+}
