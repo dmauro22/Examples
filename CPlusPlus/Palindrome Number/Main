@@ -1,0 +1,16 @@
+int main()
+{
+	int num {-12};
+	
+	Solution run; 
+
+	bool answer = run.isPalindrome(num);
+
+	cout << "Your original number is: " << num << endl;
+	
+	cout << "Palindrome? (0 = no, 1 = yes): " << answer << endl;
+
+	system("pause");
+	
+	return 0;
+}
