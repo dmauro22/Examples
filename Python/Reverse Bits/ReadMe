@@ -1,0 +1,8 @@
+Create a function that reverses the bits in an integer
+
+For example:
+input: 5
+output: 160
+explanation: 
+      5 = 00000101
+    160 = 10100000
