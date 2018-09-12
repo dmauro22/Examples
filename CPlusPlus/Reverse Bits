@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int solution(int question)
+{
+	int answer = 0;
+	int temp = question;
+	for (int i = 0; i < 8; i++)
+	{
+		answer <<= 1;
+		answer += temp&1;
+		temp >>= 1;
+	}
+	return answer;
+}
+
+int main()
+{
+	int input{11};
+	int output = solution(input);
+	cout << "Your original number is: " << input << endl;
+	cout << "Your number with the bits reversed: " << output << endl;
+	system ("pause");
+	return 0;
+}
