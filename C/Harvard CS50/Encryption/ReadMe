@@ -1,0 +1,11 @@
+A program that shows a very simple method of encryption.
+It is not secure, and is not recommended for anything
+other than introducing how encrpytion works.
+
+The program requires an integer as an argument from the 
+command line immediately after the program name and before
+pressing enter.  
+
+Once the program is running, the user is prompted for a 
+string.  This string is then encrypted according to the 
+user-provided key and is returned to the terminal output.
