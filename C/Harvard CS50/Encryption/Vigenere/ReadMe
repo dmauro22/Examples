@@ -1,0 +1,7 @@
+
+A program that accepts a string (used as a cipher key)
+from the command line as an argument after the program name.
+Once the program is running, the user is prompted for
+another string, which will be encrypted. This second
+string is encrypted according to the key and returned to
+the terminal output.
