@@ -5,3 +5,6 @@ Once the program is running, the user is prompted for
 another string, which will be encrypted. This second
 string is encrypted according to the key and returned to
 the terminal output.
+
+This cipher is slightly more elaborate than the Caeser cipher,
+but is not recommended for encrypting anything important.
