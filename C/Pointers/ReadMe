@@ -1,0 +1,29 @@
+Pointers seem to be a very difficult topic for some reason.
+I know it took me a while to be able to wrap my head around
+the concept.
+
+A big challenge for me was the abstraction.  I think it is easy
+to get lost in the concept of a pointer indirectly 'pointing' 
+to data through an additional (and seemingly unnecessary to a
+new programmer) variable.  
+
+The code snippet in pointer.c shows the relationship between
+arrays and pointers.  When the concept was explained to me
+like this (possibly more than once...), it made a lot more sense.
+
+The syntax is easy to jumble as well, especially if you are a newer 
+programmer.  It can take a while to nail down with confidence
+whether you should use '*' '&' '[]' or something else in a given
+scenario.
+
+As with many things in programming, and life in general, 'practice
+makes permanent'.  I think that simply dedicating time to practicing
+pointers (correctly) will lead to a better understanding.
+
+On a philosophical note, a 'challenging' concept like this drives
+me crazy sometimes as I am trying to learn it, but it is so so very
+satisfying when I finally get it down.  It is one of my favorite 
+things about computer programming - there is no shortage of topics
+to feed my brain.
+
+If everything were super easy, wouldn't life be kind of boring?
