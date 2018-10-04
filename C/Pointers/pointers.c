@@ -4,15 +4,22 @@
 int main()
 {
     char *name = (char *) malloc(128);
-    //char *initials = (char *) malloc(128);
-    printf("Name: ");
+
+    // Initializing the values by alternating between 
+    // array and pointer notation
     *name = 'D';
-    name[1] = 'E';
-    *(name + 2) = 'H';
+    name[1] = 'a';
+    *(name + 2) = 'n';
     name[3] = '\0';
 
-    //scanf("%s",name);
-
-    printf("%s\n",name);
+    // Printing tha values by alternating between
+    // array and pointer notation
+    printf("%c\n", name[0]);
+    printf("%c\n", *(name + 1));
+    printf("%c\n", name[2]);
+    
+    // The full name
+    printf("%s\n", name);
+    
     return 0;
 }
