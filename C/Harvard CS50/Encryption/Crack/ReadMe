@@ -1,0 +1,11 @@
+This program is a simplistic representation of a brute force password cracking algorithm
+
+The key assumptions:
+
+-We have access to usernames and hashed passwords
+-The passwords have been encrypted with C's DES based crypt function
+-The program call includes one command line argument: the hashed password 
+-This hashed password should be 13 characters total: a 2 character salt followed by the encrypted password
+-The password is a maximum of 5 characters (I did say that it was simplistic)
+
+https://en.wikipedia.org/wiki/Crypt_(C)
