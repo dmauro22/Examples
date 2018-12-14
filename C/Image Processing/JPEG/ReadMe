@@ -1,0 +1,12 @@
+This program provides an example of how a series of JPEG
+files could be recovered from a memory card that has been
+'erased'.  It is part of the projects assigned in Harvard's
+CS50 course.
+
+When a memory card is erased, it doesn't always get wiped
+completely.  Sometimes images can be recovered if you know
+where to find them.  JPEGs have a distinct header.
+
+The input here is a .raw format, in the manner that you
+might find on a digital camera's memory card.  The program
+outputs numbered JPEGs if they can be recovered.
