@@ -1,0 +1,9 @@
+This program accepts a bitmap file and increases the size by
+an integer value provided by the user.
+
+The program call requires 3 arguments:
+-an integer, the factor by which to resize the bitmap
+-an input file (.bmp) to read the incoming bitmap
+-an output file (.bmp) to write the new resized bitmap 
+
+The bitmap header file is required.
