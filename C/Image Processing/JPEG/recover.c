@@ -29,19 +29,13 @@ int main(int argc, char *argv[])
         return 2;
     }
 
-/*
-    FILE *inptr = fopen(infile, "r");
-
-    FILE *outptr = NULL;
-
-*/
     // Pull in first set of 512 bytes
     count = fread(buffer, 1, 512, inptr);
 
     // As long as we are not at end of file...
     while (count == 512)
     {
-        // If statement is looking for the standard JPG header signature
+        // This 'if' statement is looking for the standard JPG header signature
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
         {
             flag = 1;
