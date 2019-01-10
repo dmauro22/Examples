@@ -1,11 +1,14 @@
+// This solution accepts a Roman numeral in the form of a string and returns an integer
+// representing the Roman numeral in integer format
+
 class Solution
 {
 public:
 	int romanToInt(string s)
-	{
+	{	
 		string roman = s;
 		int digit = 0;
-
+	
 		while (roman.size() > 0)
 		{
 			if (roman[0] == 'I')
