@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h1>Word Comparisonator Thing</h1>
+<form action="/score" method="post">
+    <input name="string1" placeholder="Word1" type="text"/>
+    <input name="string2" placeholder="Word2" type="text"/>
+    <input type="submit" value="Compare"/>
+</form>
+
+{% endblock %}
