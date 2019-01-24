@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang ="en">
+    <table>
+        <tbody>
+            <!--Your Comparisonator Thing Results: -->
+            <tr>
+                <th>
+                {% for x in range(s2|length + 1) %}
+                    {% if x == 0 %}
+                        <td> </td>
+                    {% else %}
+                        <td><b>{{s2[x-1]}}</b></td>
+                    {% endif %}
+                {% endfor %}
+                </th>
+            </tr>
+
+            {% for x in range(matrix|length) %}
+            <tr>
+                {% for y in range(matrix[x]|length + 1) %}
+                    {% if y == 0 and x == 0 %}
+                        <th></th>
+                    {% elif y == 0 %}
+                        <th><b>{{s1[x-1]}}</b></th>
+                    {% else %}
+                        <td> {{ matrix[x][y - 1][0] }}</td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+
+</html>
