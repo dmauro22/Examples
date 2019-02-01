@@ -5,8 +5,6 @@ class Solution:
         :type target: int
         :rtype: List[int]
         """
-        #for i in range(nums.len()):
-        #    print(i)
         
         i = 0
         
