@@ -1,0 +1,7 @@
+This is a web application written using Python with Flask and Jinja.
+
+The application accepts two strings as input, and calculates the number
+of steps required to change one string to the other.  The steps are add,
+remove, and substitute.
+
+This project was done as part of Harvard's CS50 course through EdX.
