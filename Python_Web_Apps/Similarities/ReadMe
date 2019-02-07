@@ -4,4 +4,10 @@ The application accepts two strings as input, and calculates the number
 of steps required to change one string to the other.  The steps are add,
 remove, and substitute.
 
+Base code was provided before-hand. My role in this project was to program the following:
+
+-Implement the 'distances' function in 'helpers.py'
+-Implement 'index.html' 
+-Implement 'matrix.html', 
+
 This project was done as part of Harvard's CS50 course through EdX.
