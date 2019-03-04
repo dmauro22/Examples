@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio Summary
+{% endblock %}
+
+{% block main %}
+    <table>
+        <thead>
+        <th><u>Your Portfolio</u></th>
+        </thead>
+        <tbody>
+            <th2>
+                <td><b>Company</b></td>
+                <td><b>Symbol</b></td>
+                <td><b>Shares</b></td>
+                <td><b>Price</b></td>
+                <td><b>Value</b></td>
+            </th2>
+            {% for i in myStocks %}
+            <tr>
+                {# <td>{{i}}</td> #}
+                <td>{{ i["name"] }}</td>
+                <td>{{ i["symbol"] }}</td>
+                <td>{{ i["shares"] }}</td>
+                <td>{{ i["price"] }}</td>
+                <td>{{ i["Total"] }}</td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+
+        <tfoot>
+            <tr><td1>Cash on hand: {{cash}}<br></td1></tr>
+
+            <tr><td1>Total Assets: {{ sVals }} </td1></tr>
+        </tfoot>
+{% endblock %}
