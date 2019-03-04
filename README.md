@@ -1,4 +1,4 @@
 # Examples
 Examples of code
 
-Various programs that I have written in C, C++, and Python
+Various programs that I have written using C, C++, Python, SQL, etc
