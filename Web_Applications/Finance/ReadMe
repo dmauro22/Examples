@@ -1,2 +1,23 @@
-This is a stock trading simulator.  It was created as a project for
-Harvard's CS50 course
+This is a stock trading simulator that I am currently working on.  
+It was created as a project for Harvard's CS50 course.
+
+Provided beforehand:
+-helpers.py
+-apology.html
+-layout.html
+-login.html
+
+My implementations:
+-application.py (the imports and initializations at the top of the file were provided beforehand)
+-finance.db
+-index.html
+-addCash.html
+-buy.html
+-display.html
+-history.html
+-index.html
+-quote.html
+-register.html
+-sell.html
+
+style.css was provided before and then modified by me after
