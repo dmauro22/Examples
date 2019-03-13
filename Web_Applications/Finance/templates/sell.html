@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell Stock
+{% endblock %}
+
+{% block main %}
+    <form class="form-horizontal" action="/sell" method="post">
+        <div class="form-group">
+            <label>Stock</label>
+                <!--<input name="symbol" type="text" placeholder=" stock symbol "/>-->
+                <select name="symbol">
+                    {% for stk in myStocks %}
+                        <option value={{ stk["symbol"] }}>{{stk["symbol"]}}</option>
+                    {% endfor %}
+                </select>
+        </div>
+        <div class="form-group">
+            <label>Amount</label>
+                <input size="4" name="shares" type="number" placeholder=" "/>
+        </div>
+        <button class="btn btn-primary" type="submit">Sell Stock</button>
+    </form>
+{% endblock %}
