@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Transaction History
+{% endblock %}
+
+{% block main %}
+    <table>
+        <thead>
+            <th>Transaction History</th>
+        </thead>
+        <tbody>
+            <th2>
+                <td><b>Type</b></td>
+                <td><b>Symbol</b></td>
+                <td><b>Shares</b></td>
+                <td><b>Price</b></td>
+                <td><b>Total Cost</b></td>
+                <td><b>Time Stamp</b></td>
+            </th2>
+            {% for i in past %}
+            <tr>
+                <td>{{ i["buy_sell"] }}</td>
+                <td>{{ i["symbol"] }}</td>
+                <td>{{ i["shares"] }}</td>
+                <td>{{ i["price"] | usd }}</td>
+                <td>{{ i["total_cost"] | usd }}</td>
+                <td>{{ i["timestamp"] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
