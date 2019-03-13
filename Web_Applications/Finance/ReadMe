@@ -1,6 +1,11 @@
 This is a stock trading simulator that I am currently working on.  
 It was created as a project for Harvard's CS50 course.
 
+The main application is implemented using Python
+A SQLite database is used to track the portfolio and users
+Flask is used for the webserver
+Jinja is used for templating the HTML pages
+
 Provided beforehand:
 -helpers.py
 -apology.html
