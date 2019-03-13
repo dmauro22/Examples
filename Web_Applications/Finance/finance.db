@@ -1,0 +1,17 @@
+This database was implemented using SQLite
+
+There are three tables in this database.  The structure is described below:
+
+Users:
+CREATE TABLE 'users' ('id' INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 'username' TEXT NOT NULL, 
+                      'hash' TEXT NOT NULL, 'cash' NUMERIC NOT NULL DEFAULT 10000.00 )
+
+Portfolio:
+CREATE TABLE 'portfolio' ('id' INTEGER NOT NULL, 'symbol' TEXT NOT NULL, 'shares' INTEGER NOT NULL, 
+                            PRIMARY KEY(id, symbol), FOREIGN KEY(id) REFERENCES users(id))
+
+
+History:
+CREATE TABLE 'history' ('transaction_id' integer PRIMARY KEY AUTOINCREMENT NOT NULL, 'user_id' integer NOT NULL, 
+                        'buy_sell' text NOT NULL, 'symbol' text NOT NULL, 'shares' integer NOT NULL, 
+                        'price' real NOT NULL, 'timestamp' text NOT NULL, FOREIGN KEY (user_id) REFERENCES users(id))
