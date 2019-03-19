@@ -9,4 +9,4 @@ The C applications include bitmap resizing program, a JPEG recovery program,
 and a few password cracking/encryption programs
 
 The Python applications include a couple of dynamic web applications, 
-the highlight being 'finance', a full stack stock trading simulator
+the highlight being 'Finance', a full stack stock trading simulator
